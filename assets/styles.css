@@ -1,5 +1,10 @@
+:root {
+    --text-color: #72a2db;
+    --card-front-color:  rgb(16, 24, 129);
+    --card-back-color: #420738;
+}
 body{
-    background-color: rgb(201, 237, 248);
+    background: url('img/image.png');
      font-family: "Ancizar Serif", serif;
 }
 
@@ -21,12 +26,12 @@ footer p {
 }
 .cartao {
     margin: 1rem 1rem;
-     background-color: rgb(16, 24, 129);
      height: 20rem;
       flex-grow: 1;
        flex-basis: calc(33% - 6rem);
 }
 .cartao__conteudo {
+       background-color: rgb(16, 24, 129);
     text-align: center;
         height: 100%;
 }
@@ -38,4 +43,18 @@ footer p {
         margin: 0.3rem;
     border-radius:0.3rem;
     font-size: 1vw;
+}
+.cartao__conteudo p {
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.cartao__conteudo__pergunta p {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.cartao__conteudo__resposta p {
+    color: var(--card-back-color);
+    font-weight: 700;
 }
