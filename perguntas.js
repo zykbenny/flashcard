@@ -21,7 +21,8 @@ criaCartao(
 criaCartao( 
     'Universo',
     'Existe chuva de vidro em algum planeta?',
-    ' Em HD 189733b, um exoplaneta a cerca de 64 anos-luz da Terra, há uma chuva de vidro que cai horizontalmente devido aos ventos extremamente fortes que sopram a mais de 7.000 km/h. Esse fenômeno demonstra a diversidade e a extrema variedade de condições atmosféricas que podem existir além da Terra.',
+    ' Em HD 189733b, um exoplaneta a cerca de 64 anos-luz da Terra, há chuva de vidro. Esse fenômeno demonstra a diversidade e a extrema variedade de condições atmosféricas que podem existir além da Terra.',
+)
 criaCartao(
     'Universo',
     'Há um buraco negro em nossa galáxia?',
