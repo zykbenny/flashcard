@@ -12,6 +12,19 @@ function criaCartao(categoria, pergunta, resposta) {
             <p>${resposta}</p>
     </div>
     </div>
- `
- container.appendChild(cartao)
+ ` 
+ 
+    let respostaEstaVisivel = false
+function viraCartao() {
+    respostaEstaVisivel = !respostaEstaVisivel
+    cartao.classList.toggle('active', respostaEstaVisivel)
 }
+cartao.addEventListener('click', viraCartao)
+    container.appendChild(cartao)
+
+}
+document.querySelectorAll('.cartao').forEach(cartao => {
+    cartao.addEventListener('click', () => {
+        cartao.classList.toggle('active');
+    });
+});

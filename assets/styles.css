@@ -33,6 +33,9 @@ footer p {
      height: 20rem;
       flex-grow: 1;
        flex-basis: calc(33% - 6rem);
+       perspective: 1000px; 
+    cursor: pointer;     
+    position: relative;
 }
 .cartao__conteudo {
        background-color: rgb(16, 24, 129);
@@ -66,7 +69,7 @@ footer p {
     color: var(--card-back-color);
     font-weight: 700;
 }
-.cartao:hover .cartao__conteudo {
+.cartao.active .cartao__conteudo {
     transform: rotateY(180deg);
 }
 .cartao__conteudo__pergunta,
@@ -75,6 +78,8 @@ footer p {
      position: absolute;
      height: 100%;
     width: 100%;
+     top: 0;
+    left: 0;
 }
 .cartao__conteudo__resposta {
     transform: rotateY(180deg);

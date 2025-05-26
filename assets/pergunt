@@ -1,0 +1,19 @@
+import os
+
+file_path = 'assets/pergunt/workspaces/flashcard/assets/pergunt'
+
+try:
+    os.remove(file_path)
+    print(f"Arquivo '{file_path}' excluído com sucesso.")
+except FileNotFoundError:
+    print(f"O arquivo '{file_path}' não existe.")
+except Exception as e:
+    print(f"Erro ao excluir o arquivo: {e}")as/pergunt
+else:
+    print("Arquivo excluído com sucesso.")
+# This script attempts to delete a file at the specified path.
+# If the file does not exist, it catches the FileNotFoundError and prints a message.
+# If any other error occurs, it catches the exception and prints an error message.
+# If the file is successfully deleted, it prints a success message.
+# This script attempts to delete a file at the specified path.
+# If the file does not exist, it catches the FileNotFoundError and prints a message.                            
